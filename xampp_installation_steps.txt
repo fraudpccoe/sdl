@@ -1,0 +1,37 @@
+1. Update your system
+> sudo apt update
+> sudo apt upgrade
+
+2. Download the XAMPP Installer
+Go to the official XAMPP website: https://www.apachefriends.org/download.html
+OR
+> wget https://downloadsapachefriends.global.ssl.fastly.net/8.1.6/xampp-linux-x64-8.1.6-0-installer.run
+
+3. Make the Installer Executable
+> chmod +x xampp-linux-x64-8.1.6-0-installer.run
+(Replace the file name with the one you downloaded if it’s different.)
+
+4. Run the Installer
+> sudo ./xampp-linux-x64-8.1.6-0-installer.run
+
+5. Start/Stop XAMPP
+Start XAMPP:
+> sudo /opt/lampp/lampp start
+Stop XAMPP:
+> sudo /opt/lampp/lampp stop
+
+6. Change the ownership & permission of the directory to your user:
+> sudo chown -R yourusername:yourusername /opt/lampp/htdocs
+> sudo chmod -R u+rwx /opt/lampp/htdocs
+
+
+make the copy paste right:
+Steps to copy paste .php and .html files in htdocs folder
+⦁ To change the privilege of htdocs file do the following: Open new terminal
+⦁ sudo su
+⦁ enter password
+⦁ chmod -R 777 /opt/lampp/htdocs
+⦁ After this copy and paste the .php file and .html file in htdocs
+⦁ Go into the browser
+⦁ localhost:81/phpmyadmin
+⦁ localhost:81/contact.html

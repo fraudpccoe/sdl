@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Image Gallery</title>
+  <style>
+    h1 {
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.9);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/300/200?random=1" alt="Gallery 1">
+    <img src="https://picsum.photos/300/200?random=2" alt="Gallery 2">
+    <img src="https://picsum.photos/300/200?random=3" alt="Gallery 3">
+    <img src="https://picsum.photos/300/200?random=4" alt="Gallery 4">
+    <img src="https://picsum.photos/300/200?random=5" alt="Gallery 5">
+    <img src="https://picsum.photos/300/200?random=6" alt="Gallery 6">
+  </div>
+
+</body>
+</html>
